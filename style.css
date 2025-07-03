@@ -1,0 +1,652 @@
+/* Application des styles à tous les éléments */ 
+    *
+{   /* Définit la police */
+    font-family: "Raleway", sans-serif;
+     /* Définit le style normal / italic / oblique */
+    font-style: normal;
+}
+
+body
+{   /* Fixer le margin 0 auto centre l'élément */
+    margin: 0 auto;
+     /* La hauteur s'ajuste en fonction du contenu */
+    height:auto;
+     /* Définir un fond blanc */
+    background: white;
+}
+
+a
+{   /* Supprime la décoration de texte par défaut des liens */
+    text-decoration:none;
+}
+
+button
+{   
+    /* Ajout d'une marge externe permet la clarté*/
+    margin:3px;
+    /* Délimiter les éléments avec le border */
+    border: 1px solid;
+     /* Ombre portée améliore la profondeur */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+    /* Définir des styles au survol avec la pseudo classe hover */
+    /* On ajoute elemment.classe afin de définir le ciblage */
+button.primary:hover
+{
+    /* Application d'un contraste dégradé  */
+    border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+}
+
+select 
+{   
+    background-color: #fff;
+    /* Définit la couleur de la police */
+    color: black;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+button.primary:active
+{
+    
+    /* Ombre au clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Réduit l'ombre pour un effet d'enfoncement */
+}
+
+/* Header styling */
+header
+{
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #000;
+    color: #fff;
+    max-width:100%;
+    margin: 0 auto;
+    
+    
+}
+
+.header-text
+{
+    justify-content: center;
+    font-size:1.2rem;
+    display: none ;
+    /* Non visible par défaut */
+}
+
+.logo
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80px;
+    /* Largeur de l'élément */
+    height: 80px;
+    /* Hauteur de l'élément */
+    background: url(https://lh3.googleusercontent.com/fife/ALs6j_H4B7gqbL9CzUk_kg7Ub17meroqKMrA7Y3ctt7iyxx6I1jbto5NAM7uWmqdNIXRJi_cM8zkA3j4Ol1p-4jLWqEkVKsS6U0w3EeW6K9umKZnYzQ-O_9tbJuUao-7p2X67PwFKYOCHNWJViXT7TclIAvQ1H6J8y_g3DF7ajZwHLbbTO1V7JeI6U5-4a0emtxk6m0KHbeoybl-sLKKkge0pZejesGv3sBceMCKoO0O4lPXohvzX7Gmjgy1eADKQZ4UyPU0ASxpwFQqUOpbJGF0VDwr6_4gZUqvPf9BU4dtgwEabrtlReJQD0VMRHirQMPenLwqhGjg5UWsTSmhMPrJzGwDhDgLGlOsziocYK0VH__qEFQlyLsFabV7q7uPitxZ2HQiai5cD20AjZ_FtqQSKQA42Y_gDN_JFPa4c_BgleMWtgdpgOaqRPVjcRvQWf4qR0cfQbI0q_kkeL4ajjkyOl7zouq5L05HrZVqAwteCVZRNjyvgHk7xn4DqrAu5kwGT9x8pcrQczDdWtdWxSjWPKd1MKDTNIfXArklIfn9XnWr77aF_RdwAnB2YhZbRoHUjGBzIAbYJYZOWHaCsDmOed6flliqljTE62TMbjLTB09AaO4V2h5ba06EAY1p2pcr-mZNpnUKAg_hWfre8WuTvjzmuodD7XmzmDfmyzhlB3hp3gpDse6AnmEV8WUsNGZFfuGENkhPgWumrbs7sAO1gYtqBp9Kr7ckqdjm-LpNcFH_F_I_-wh_SMQq_8zrfNPe17qKPHQ9mI7YmBtfYqK8GTgq-YdefAo9PSTamPF-OcrmL7CrqqvJuDQUwTaFee1St92ucsB90okUU0A5UDnoNtdboktwxNON3HJ0MR8Pg2E-GfTAZkGMV85QsU7yBfZeV_Tbz5nvCD82abonu_LnJIm49gpDrwJYHbMRpnE6TGd1ahhfzLKzkTHU3YrF4gH_pArc7FztBBmhhKlHBV09pFg6n-7n5mffUJtew8CJDXwg1JCsN67yi1zdJ3-np7Ln3pgQO9MdNundSVUE6dv30th95nI1VSdKFTrKUnzctj6fT-F0cVm-72V87GvrWGgc45Wy4BUE39-7bDReNnXFX7f_KZKLsc1ZB2sRCrKNx7pqZU-3lCL_YsvFS1xUe9qH38aw8wATSWblM_QYGaAKVam18YLSg48SpdXrxL_mrRnlPcFIoG0d-aXh_JgjtzLyQJCoveDM3SUxRi_gxqYMMh0VAZsAVPiT7lb_3neFnuo9Zc2bUhLBAzVKBdLZ34GHuahF6M6EnF6d1UQAuf7ZTe8n8PIVmBXdMwe13qV7NlwI_07epmUuXp3oeA-wwFQ4OU14aSXjTVvLPZxaJLlHg6VsBNpvzqS894sAxbrN5oBHqG7bLcxJVORp5APsdI0apU_KiJR5rK10_3qJtdZPBxB3s6yEfq4gDEiuC54dde_qQSfvhzFTBpK96QxYYukyE4N--muKNYJcmhBCiuETbL7nKNSP7SpjoDUzTS5cFM-GU7eHOJ1Bp75zcH-T34bgQeoj9ChKTR_IB9BFrGNr97zAZUamleECsXiAedcjJ-tnxTRQgoF7LRhm-eUrO51Lf1sNtU4Sjj9UcWUGJw=w1449-h730);
+    background-repeat: no-repeat;
+    /* Empêche la répétition de l'image */
+    background-size: contain;
+    /* Adapte l'image pour qu'elle tienne dans l'élément */
+    background-position: center;
+    /* Centre l'image dans l'élément */
+}
+
+.padding-10
+{
+    padding-top: 10px;
+}
+
+.padding-100
+{
+    padding-top: 100px;
+}
+
+nav
+{
+    display: flex;
+    gap: 2rem;
+    margin-right: 30px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding:10px;
+    border: 2px solid transparent;
+    transition: border-image 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex !important;
+    white-space: nowrap;
+}
+
+/* Hover and focus-visible effects */
+nav a:hover,nav a:focus-visible
+{
+    border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+}
+
+nav a:focus-visible
+{
+    outline: none;
+}
+textarea {
+    height:150px;
+    width: 150px;
+    resize : none;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+  }
+  
+.container
+{
+    display: flex;
+    /* Active le modèle Flexbox */
+    justify-content: space-between;
+    /* Espacement uniforme entre les colonnes */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    flex-wrap: wrap;
+    /*  retour à la ligne */
+    padding: 1rem;
+    border-radius:10px 10px 0px 0px;
+    gap: 1rem;
+    /* Ajoute un espacement entre les colonnes */
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Limite la largeur totale */
+    background-color: rgba(5, 104, 190, 0.3);
+    /* Optionnel, pour mieux visualiser */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content-box
+{
+    flex: 1;
+    /* Les boîtes partagent l'espace de manière égale */
+    background-color: #0568be;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+
+.content-box-service
+{
+    flex: 1;
+    /* Les boîtes partagent l'espace de manière égale */
+    background-color: #0568be;
+    max-width: 300px;
+    min-width: 150px;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+
+.container-avis
+{
+    display: flex;
+    /* Active le modèle Flexbox */
+    justify-content: space-between;
+    /* Espacement uniforme entre les colonnes */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    flex-wrap: wrap;
+    /*  retour à la ligne */
+    padding: 0.2rem;
+    border-radius:10px 10px 0px 0px;
+    gap: 1rem;
+    /* Ajoute un espacement entre les colonnes */
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Limite la largeur totale */
+}
+
+.content-box-avis
+{
+    width:100%;
+    flex: 1;
+    /* Les boîtes partagent l'espace de manière égale */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container-footer
+{
+    display: flex;
+    max-width:100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px 10px 0px 0px;
+    gap: 1rem;
+
+    background-color: black;
+}
+
+.content-box-footer
+{
+    display: flex;
+    /* Active le modèle Flexbox pour les enfants */
+    flex-direction: row;
+    /* Définit une disposition en ligne */
+    justify-content: space-between;
+    /* Espace entre les colonnes */
+    align-items: center;
+    /* Centre verticalement */
+    width: 100%;
+    /* S'assure que le conteneur occupe toute la largeur */
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 5px;
+}
+
+.content-box-footer > div
+{
+    flex: 1;
+    /* Les enfants partagent l'espace de manière égale */
+    margin: 0 0.5rem;
+    /* Espacement horizontal entre les colonnes */
+}
+
+.service
+{
+    width: calc(33.333% - 20px);
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.service-image
+{
+    flex: 1;
+    /* Occupe 50% de la largeur */
+    text-align: center;
+    /* Centre l'image */
+}
+
+.service-image img
+{
+    width: 100%;
+    /* Adapte l'image à la largeur de la colonne */
+    max-width: 200px;
+    /* Limite la largeur */
+    border-radius: 10px;
+    /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ombre portée pour l'esthétique */
+}
+
+.service-text
+{
+    flex: 1;
+    /* Occupe 50% de la largeur */
+    font-size: 1rem;
+    color: #fff;
+}
+
+.service-text h3
+{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-text p
+{
+    line-height: 1.6;
+}
+
+.color-white
+{
+    color:white;
+}
+
+.grid-form
+{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+input {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+fieldset input[type="checkbox"] {
+    width: auto;
+    padding: 0.5rem;
+    align-items: start;
+    margin-right: 10px;
+    float: left;
+    border:1px #034c8c;
+
+   
+   
+}
+
+
+
+#contact > div > form > fieldset:nth-child(*) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+   
+    margin-bottom: 1rem;
+}
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+.form-group input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid blue;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form-group input[type="checkbox"]:checked + label::before {
+    background-color: blue;
+}
+#rendez-vous
+{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #0568be;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    transition: 1s ease-in-out;
+    /* Transition fluide */
+    transform: translateY(0);
+    /* Position initiale */
+}
+
+.hero-banner
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.slider
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 12s infinite;
+    /* Animation sur 12 secondes */
+}
+
+.slide
+{
+    min-width: 100%;
+    /* Chaque slide occupe 100% de la largeur */
+    height: 100%;
+}
+
+.slide img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* S'assure que l'image remplit correctement le cadre */
+}
+
+/* Bouton overlay pour naviguer (optionnel) */
+.hero-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.hero-overlay h1
+{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-overlay button
+{
+    background-color: #0568be;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-overlay button:hover
+{
+    background-color: #034c8c;
+}
+
+.avis
+{
+    color: white;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    /* Cache le contenu en dehors des limites */
+    height: 130px;
+    /* Ajustement en fonction des éléments */
+}
+
+.carousel
+{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    animation: scroll 45s linear infinite;
+    /* Animation continue */
+    will-change: transform;
+}
+
+.carousel-item
+{
+    
+    width: 20rem;
+    height: 15rem;
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stars
+{
+    display: flex;
+    gap: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.stars i
+{
+    color: gold;
+}
+
+.name
+{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.comment
+{
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.bas
+{      
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #000;
+    color: #fff;
+    height:100px;
+}
+
+
+
+
+
+button
+{
+    background-color: #007bff;
+    /* Couleur principale pour le bouton */
+    width:50%;
+    margin:auto;
+    border-spacing: 0cqw;
+    color: white;
+    /* Texte en blanc */
+    padding: 0.75rem 1.5rem;
+    /* Espacement interne */
+    border: none;
+    /* Supprime la bordure par défaut */
+    border-radius: 4px;
+    /* Coins légèrement arrondis */
+    cursor: pointer;
+    /* Curseur pointeur survol */
+    font-size: 1rem;
+    /* Taille standard */
+}
+
+button:hover
+{
+    background-color: #0568be;
+    /* Couleur plus foncée au survol */
+}
+
+/* Animation pour le défilement des images header */
+@keyframes slide
+{
+    0%
+    {
+        transform: translateX(0);
+    }
+
+    33%
+    {
+        transform: translateX(-100%);
+    }
+
+    66%
+    {
+        transform: translateX(-200%);
+    }
+
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+/* Animation footer*/
+@keyframes scroll
+{
+    0%
+    {
+        transform: translateX(0);
+        /* Position de départ */
+    }
+
+    100%
+    {
+        transform: translateX(100%);
+        /* Aller jusqu'à la fin */
+    }
+
+    0%
+    {
+        transform: translateX(0);
+        /* Position de départ */
+    }
+   
+}
+
+.form-group input[type="radio"] {
+    display: none;
+}
+.form-group input[type="radio"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid blue;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form-group input[type="radio"]:checked + label::before {
+    background-color: blue;
+}

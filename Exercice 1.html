@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS Critique -->
+    <link rel="stylesheet" href="style.css" >
+	<link rel="stylesheet" href="https://cdn.320css.com/1.1.1/320.css">
+	<!-- Import typographie Raleway -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+		* {
+		font-family: "Raleway", sans-serif;
+  		font-style: normal;
+		}
+		body {	
+		margin: 0;
+		height:100vh;
+		background: linear-gradient(rgb(19, 6, 51) 36%, rgb(5, 104, 190));
+		}
+		button
+		{
+		margin:3px;
+		border: 5px solid
+		border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+		}
+
+		button{
+		border: 5px solid transparent;
+		}
+
+		button:focus-visible
+		{
+		border: 5px solid transparent;
+		border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+		}
+		 /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem 1rem;
+            background-color: #000;
+            color: #fff;
+        }
+        .header-text {
+        	justify-content: center;
+        	font-size:1.2rem;
+        	display: none ; /* Non visible par défaut */
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 80px; /* Largeur de l'élément */
+  			height: 80px; /* Hauteur de l'élément */
+  			background: url(votreimage.png);
+  			background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  			background-size: contain; /* Adapte l'image pour qu'elle tienne dans l'élément */
+  			background-position: center; /* Centre l'image dans l'élément */
+        }
+        .padding-10 {
+            padding-top: 10px;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.5rem 0.5rem;
+            border: 2px solid transparent;
+            transition: border-image 0.3s ease;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex !important;
+            white-space: nowrap;
+        }
+
+        /* Hover and focus-visible effects */
+        nav a:hover,
+        nav a:focus-visible {
+            border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+        }
+
+        nav a:focus-visible {
+            outline: none;
+        }
+        .container {
+    	display: flex; /* Active le modèle Flexbox */
+    	justify-content: space-between; /* Espacement uniforme entre les colonnes */
+    	align-items: center; /* Centre verticalement les éléments */
+    	flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    	padding: 1rem;
+
+        border-radius:10px 10px 0px 0px;
+    	gap: 1rem; /* Ajoute un espacement entre les colonnes */
+    	margin: 0 auto;
+    	max-width: 1200px; /* Limite la largeur totale */
+    	background-color: rgba(5, 104, 190, 0.3); /* Optionnel, pour mieux visualiser */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		}
+
+		.content-box {
+    	flex: 1; /* Les boîtes partagent l'espace de manière égale */
+    	background-color: #0568be; 
+    	color: white;
+    	text-align: center;
+    	padding: 1rem;
+    	border-radius: 5px;
+		}
+        #rendez-vous {
+  		display: inline-block;
+  		align-items: center;
+  		justify-content: center;
+  		font-size: 1.2rem;
+  		color: white;
+  		background-color: #0568be;
+  		text-decoration: none;
+  		padding: 0.2rem 1rem;
+  		border-radius: 5px;
+  		transition:  background-color 1s ease-in-out; /* Transition fluide */
+  		transform: translateY(0); /* Position initiale */
+		}
+
+        /* Media queries */
+        @media only screen and (max-width: 760px)
+        {
+        	#rendez-vous {
+    			transform: translateY(0cm); /* Descend de 10 cm */
+    			background-color: #053abe; /* Couleur à déterminer !*/
+  			}
+        }
+        @media only screen and (min-width: 760px)   {
+        	.header-text {
+        		display: block ;
+        	}
+         
+        }
+    </style>
+</head>
+<body>
+<section id="navigation">
+<header>
+    <div class="logo"></div>
+    <div class="header-text">Agence marketing et digital</div>
+        <nav>
+        	<a href="#book">E-book</a>
+            <a href="#services">Services</a>
+            <a href="#contact" id="rendez-vous">Prendre contact</a>
+            
+        </nav>
+
+</header>
+</section>
+<!-- SECTION E-BOOK -->
+<main class="padding-10">
+    <div class="container ">
+        <div class="content-box" >
+            <div class="hero-banner">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="image1.jpg" alt="mountains">
+                    </div>
+                    <div class="slide">
+                        <img src="image2.jpg" alt="field">
+                    </div>
+                    <div class="slide">
+                        <img src="house.jpg" alt="house">
+                    </div>
+                    <div class="slide">
+                        <img src="ladybug.jpg" alt="ladybug">
+                    </div>
+                </div>
+                <div class="hero-overlay">
+                    <h1>Bienvenue sur notre site</h1>
+                    <p>Découvrez nos solutions adaptées à vos besoins</p>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="book" class="padding-10">
+<div class="container">
+    <div class="content-box"> 
+        <article>
+            <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+        </article>
+    </div>
+    <div class="content-box"> 
+        <article>
+            <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+        </article>
+    </div>
+    <div class="content-box"> 
+        <article>
+            <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+        </article>
+    </div>
+</div>
+</section>
+<!-- SECTION SERVICES -->
+<section id="services">
+    
+</section>
+</main>
+<footer>
+<!-- SECTION CONTACT -->
+<section id="contact">
+</section>
+</footer>
+<!-- Importation script js -->
+</body>
+</html>
